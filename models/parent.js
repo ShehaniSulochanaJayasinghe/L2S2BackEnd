@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-var parenttSchema = new Schema({
+var parentSchema = new Schema({
     id:{type:String,required:true},
     firstName:{type:String,required:true},
     lastName:{type:String,required:true},
@@ -17,4 +17,4 @@ var parenttSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('Parent',parenttSchema);
+module.exports = mongoose.model('parent',parentSchema);
