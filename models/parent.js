@@ -3,18 +3,18 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 var parentSchema = new Schema({
-    id:{type:String,required:true},
-    firstName:{type:String,required:true},
-    lastName:{type:String,required:true},
-    email:{type:String,required:true},
-    password:{type:String,required:true},
-    confirmpassword:{type:String,required:true},
-    address:{type:String,required:true},
-    noofchildren:{type:Number,required:true},
-    childName:{type:String,required:true},
-    childSchool:{type:String,required:true},
-     contactNumbers:[{contactNumber:{type:Number}}]
+    FirstName:{type:String,required:true},
+    LastName:{type:String,required:true},
+    Email:{type:String,required:true},
+    Password:{type:String,required:true},
+    ConfirmPassword:{type:String,required:true},
+    Address:{type:String,required:true},
+    NoOfChildren:{type:Number,required:true},
+    ChildName:{type:String,required:true},
+    ChildSchool:{type:String,required:true},
+    ContactNumbers:{type:Number,required:true},
 
 });
 
 module.exports = mongoose.model('parent',parentSchema);
+

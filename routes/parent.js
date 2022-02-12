@@ -3,17 +3,17 @@ const router = express.Router()
 const Parent = require('../models/parent');
 
 router.route('/signup').post((req,res)=>{
-    const {id,
+    const { id,
         FirstName,
         LastName,
         Email,
         Password,
         ConfirmPassword,
-       Address,
-       NoOfChildren,
-       ChildName,
-       ChildSchool,
-       ContactNumbers} = req.body;
+        Address,
+        NoOfChildren,
+        ChildName,
+        ChildSchool,
+        ContactNumbers} = req.body;
 
     var newParent = new Parent({
         id,
@@ -22,11 +22,11 @@ router.route('/signup').post((req,res)=>{
         Email,
         Password,
         ConfirmPassword,
-       Address,
-       NoOfChildren,
-       ChildName,
-       ChildSchool,
-       ContactNumbers
+        Address,
+        NoOfChildren,
+        ChildName,
+        ChildSchool,
+        ContactNumbers
         
       
     });
@@ -48,29 +48,29 @@ router.route('/').get((req,res)=>{
 
 router.route('/update/:id').put((req,res)=>{
     var parentId = req.params.id;
-    const { id,
+    const {id,
         FirstName,
         LastName,
         Email,
         Password,
         ConfirmPassword,
-       Address,
-       NoOfChildren,
-       ChildName,
-       ChildSchool,
-       ContactNumbers} = req.body;
+        Address,
+        NoOfChildren,
+        ChildName,
+        ChildSchool,
+        ContactNumbers} = req.body;
     var updateParent = {
-        id,
+       id,
         FirstName,
         LastName,
         Email,
         Password,
         ConfirmPassword,
-       Address,
-       NoOfChildren,
-       ChildName,
-       ChildSchool,
-       ContactNumbers
+        Address,
+        NoOfChildren,
+        ChildName,
+        ChildSchool,
+        ContactNumbers
       
     };
     var update = Parent.findByIdAndUpdate(parentId,updateParent).then((update)=>{
