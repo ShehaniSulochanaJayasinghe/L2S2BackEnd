@@ -1,19 +1,18 @@
 {
-  "name": "signupbacknd",
+  "name": "l2s2-project-api",
   "version": "1.0.0",
-  "description": "Sign Up Application",
-  "main": "index.js",
+  "description": "L2S2",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
   },
-  "author": "Team 17",
+  "author": "Shehani Sulochana",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
-    "dotenv": "^14.3.2",
-    "express": "^4.17.2",
-    "mongoose": "^6.1.8",
-    "nodemon": "^2.0.15"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2",
+    "nodemon": "^2.0.7"
   }
 }
